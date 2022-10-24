@@ -1,0 +1,72 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= name %></p>
+    <script>
+        function myfunction(){
+            var day_in_month = parseInt(document.getElementById("dayInput").value)%7;
+            var week_day;
+            switch (day_in_month) {
+                case 1:
+                    week_day="Sunday";
+                    break;
+                case 2:
+                    week_day="Monday";
+                    break;
+                case 3:
+                    week_day="Tuesday";
+                    break;
+                case 4:
+                    week_day="Wednesday";
+                    break;
+                case 5:
+                    week_day="Thursday";
+                    break;
+                case 6:
+                    week_day="Friday";
+                    break;
+                case 0:
+                    week_day="Saturday";
+                    break;
+                default:
+                    week_day="unknown"
+                    break;
+            }
+            document.getElementById("output").innerHTML=week_day;
+        }
+    </script>
+    <div class="container">
+        <label for="">input number</label>
+        <input type="text" id="dayInput">
+        
+        <button onclick="myfunction()">Submit</button>
+        
+        <p id="output"></p>
+    </div>
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hello admin </title>
+</head>
+<body>
+   <h2>admin page</h2>
+    <div class="selectBox">
+            <%- selectBox %>
+        </select>
+     </div>
+     <h1>The list of peoduct</h1>
+     <div> <%- result %> </div>
+</body>
+</html>
